@@ -1,5 +1,5 @@
 #!name = All In One Pro Max Ultimate
-#!desc = YouTube + Locket + SoundCloud + Spotify + Nhiều App khác
+#!desc = YouTube + Locket + SoundCloud + Spotify + Nhiều App khác | BoxJS: https://raw.githubusercontent.com/furosutodesu/cracks/master/ver2promax/boxjs.json
 #!author = Gấu Lỏz CUTO_Tổng hợp các URL trên mạng
 #Shadowrocket Unlock nhiều app vip
 
@@ -20,6 +20,9 @@ http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:4
 (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
 
 [Script]
+#Kill Switch
+kill-switch = type=cron,cronexp=0 * * * *,wake-system=0,timeout=30,script-path=kill-switch.js
+
 #Sub-Store
 Sub-Store Core = type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=sub-store-1.min.js,requires-body=true,timeout=120
 Sub-Store Simple = type=http-request,pattern=^https?:\/\/sub\.store,script-path=sub-store-0.min.js,requires-body=true

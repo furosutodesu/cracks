@@ -1,0 +1,15 @@
+{
+  "id": "com.crack.ver2promax",
+  "name": "10 in 1 Pro Max",
+  "desc": "Cấu hình thời hạn sử dụng module",
+  "author": "@furosutodesu",
+  "settings": [
+    {
+      "id": "crack_expires",
+      "name": "Ngày hết hạn (YYYY-MM-DD)",
+      "type": "input",
+      "val": "",
+      "placeholder": "vd: 2026-12-31"
+    }
+  ]
+}

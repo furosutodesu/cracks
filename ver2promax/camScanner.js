@@ -1,3 +1,6 @@
+// @kill-check
+{const _e=$persistentStore.read("crack_expires")||"",_k=$persistentStore.read("crack_killed")==="true",_n=new Date().toISOString().slice(0,10);if(!_e||_k||_n>_e)$done({});}
+
 var banhsbao = JSON.parse($response.body);
 const vipa = '/purchase/cs/query_property';
 const vipb = '/queryProperty';
