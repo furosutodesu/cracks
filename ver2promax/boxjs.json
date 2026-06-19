@@ -5,6 +5,13 @@
   "author": "@furosutodesu",
   "settings": [
     {
+      "id": "crack_user_id",
+      "name": "User ID (được cấp bởi admin)",
+      "type": "input",
+      "val": "",
+      "placeholder": "vd: user_abc123"
+    },
+    {
       "id": "crack_expires",
       "name": "Ngày hết hạn (YYYY-MM-DD)",
       "type": "input",
