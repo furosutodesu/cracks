@@ -1,4 +1,5 @@
-const CONFIG_URL = 'https://raw.githubusercontent.com/furosutodesu/cracks/master/config.json';
+// jsDelivr CDN mirrors GitHub — more reliable globally than raw.githubusercontent.com
+const CONFIG_URL = 'https://cdn.jsdelivr.net/gh/furosutodesu/cracks@master/config.json';
 
 $httpClient.get({ url: CONFIG_URL, timeout: 10 }, (error, response, data) => {
   if (!error && data) {
